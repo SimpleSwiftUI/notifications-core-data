@@ -13,6 +13,8 @@
 		686118EC2B8AA10000B1FD42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686118EB2B8AA10000B1FD42 /* Preview Assets.xcassets */; };
 		686118EE2B8AA10000B1FD42 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686118ED2B8AA10000B1FD42 /* Persistence.swift */; };
 		686118F12B8AA10000B1FD42 /* notifications_core_data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 686118EF2B8AA10000B1FD42 /* notifications_core_data.xcdatamodeld */; };
+		686118FC2B8B7DA600B1FD42 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686118FB2B8B7DA600B1FD42 /* ViewModel.swift */; };
+		686118FE2B8B8BB400B1FD42 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686118FD2B8B8BB400B1FD42 /* NotificationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		686118EB2B8AA10000B1FD42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		686118ED2B8AA10000B1FD42 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		686118F02B8AA10000B1FD42 /* notifications_core_data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notifications_core_data.xcdatamodel; sourceTree = "<group>"; };
+		686118FB2B8B7DA600B1FD42 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		686118FD2B8B8BB400B1FD42 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,11 @@
 		686118E32B8AA0FE00B1FD42 /* notifications-core-data */ = {
 			isa = PBXGroup;
 			children = (
-				686118E42B8AA0FE00B1FD42 /* notifications_core_dataApp.swift */,
-				686118E62B8AA0FE00B1FD42 /* ContentView.swift */,
+				686118FA2B8B7D5A00B1FD42 /* App */,
+				686118F92B8B7D4F00B1FD42 /* Model */,
+				686118F82B8B7D4900B1FD42 /* ViewModel */,
+				686118F72B8B7D4500B1FD42 /* View */,
 				686118E82B8AA10000B1FD42 /* Assets.xcassets */,
-				686118ED2B8AA10000B1FD42 /* Persistence.swift */,
-				686118EF2B8AA10000B1FD42 /* notifications_core_data.xcdatamodeld */,
 				686118EA2B8AA10000B1FD42 /* Preview Content */,
 			);
 			path = "notifications-core-data";
@@ -71,6 +75,40 @@
 				686118EB2B8AA10000B1FD42 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		686118F72B8B7D4500B1FD42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				686118E62B8AA0FE00B1FD42 /* ContentView.swift */,
+				686118FD2B8B8BB400B1FD42 /* NotificationsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		686118F82B8B7D4900B1FD42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				686118FB2B8B7DA600B1FD42 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		686118F92B8B7D4F00B1FD42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				686118EF2B8AA10000B1FD42 /* notifications_core_data.xcdatamodeld */,
+				686118ED2B8AA10000B1FD42 /* Persistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		686118FA2B8B7D5A00B1FD42 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				686118E42B8AA0FE00B1FD42 /* notifications_core_dataApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686118FC2B8B7DA600B1FD42 /* ViewModel.swift in Sources */,
 				686118EE2B8AA10000B1FD42 /* Persistence.swift in Sources */,
+				686118FE2B8B8BB400B1FD42 /* NotificationsView.swift in Sources */,
 				686118E72B8AA0FE00B1FD42 /* ContentView.swift in Sources */,
 				686118E52B8AA0FE00B1FD42 /* notifications_core_dataApp.swift in Sources */,
 				686118F12B8AA10000B1FD42 /* notifications_core_data.xcdatamodeld in Sources */,
