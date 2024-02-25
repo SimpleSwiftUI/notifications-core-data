@@ -72,7 +72,8 @@ struct NotificationsView: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.horizontal, 36)
-                    .onChange(of: notificationType) { currentType, newType in
+                    // .onChange(of: notificationType) { newType in             // iOS 16
+                    .onChange(of: notificationType) { currentType, newType in   // iOS 17
                         withAnimation {
                             showWeeklyControls = (newType == "Weekly")
                         }
@@ -118,7 +119,8 @@ struct NotificationsView: View {
                             .padding(.vertical, 4)
                             .padding(.horizontal, 6)
                             .cornerRadius(5)
-                            .onChange(of: notificationBody) { currentValue, newValue in
+                            // .onChange(of: notificationBody) { newValue in                // iOS 16
+                            .onChange(of: notificationBody) { currentValue, newValue in     // iOS 17
                                 if notificationBody.count > 60 {
                                     notificationBody = String(notificationBody.prefix(40))
                                 }

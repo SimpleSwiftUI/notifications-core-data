@@ -16,7 +16,7 @@ struct ContentView: View {
             NavigationLink {
                 NotificationsView()
             } label: {
-                Text("Open reminders view")
+                Text("Open notifications view")
             }
             .padding()
         }
